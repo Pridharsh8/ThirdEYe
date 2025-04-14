@@ -1,0 +1,53 @@
+/* About.css */
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 40px;
+    background-color: #135a99d6;
+  }
+  
+  .about-content {
+    max-width: 50%;
+  }
+  
+  .about-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #fffbfb;
+  }
+  
+  .about-content p {
+    font-size: 20px;
+    color: #f0f0f0;
+    margin-bottom: 30px;
+  }
+  
+  .about-content button {
+    background-color: #0066ff;
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  @media (max-width: 992px) {
+    .about-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-content, .about-image {
+      max-width: 100%;
+    }
+  
+    .about-content {
+      margin-bottom: 40px;
+    }
+  }
+  

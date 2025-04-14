@@ -1,0 +1,49 @@
+/* Login.css */
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2e0452; /* Dark Blue Background */
+    /* White Text */
+  }
+  .login-container h1{
+    color: aliceblue;
+    text-align: center;
+  }
+  .login-container h2{
+    color: aliceblue;
+    text-align: center;
+  }
+  
+  .typewriter {
+    font-size: 2rem;
+    font-family: "Courier New", Courier, monospace;
+    overflow: hidden; /* Ensures the text is hidden beyond the boundary */
+    border-right: 3px solid rgb(251, 246, 246); /* Creates the blinking cursor effect */
+    white-space: nowrap; /* Keeps the text in a single line */
+    margin: 0 auto;
+    animation: typing 4s steps(40, end), blink 0.7s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: white;
+    }
+  }
+  

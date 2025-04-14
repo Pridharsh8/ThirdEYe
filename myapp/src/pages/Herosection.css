@@ -1,0 +1,82 @@
+/* HeroSection.css */
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 40px;
+    background-color: #6294c1;
+  }
+  .hero-video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  .video-player {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .hero-content {
+    max-width: 50%;
+  }
+  
+  .hero-content h1 {
+    font-size: 78px;
+    margin-bottom: 20px;
+   
+    color: #333;
+  }
+  /* Apply styles for the image container */
+
+  
+  .hero-content p {
+    font-size: 38px;
+    color: #f7f7f7;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .hero-content button {
+    background-color: #0066ff;
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+  
+  .hero-image img {
+    width: 300px; /* Adjust size as needed */
+    object-fit: cover;
+    margin-right: 20px; /* Adds a bit of space from the edge */
+  
+  }
+  .hero-image {
+    position: relative;
+    text-align: right; /* Aligns the image to the right */
+    margin-top: -30px; 
+  }
+  .about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  
+  @media (max-width: 992px) {
+    .hero-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-content, .hero-image {
+      max-width: 100%;
+    }
+  
+    .hero-content {
+      margin-bottom: 40px;
+    }
+  }
+  

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trigger Streamlit App</title>
+    <style>
+        body, html {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #1c134b;
+            color: #ffffff;
+            margin: 0;
+            overflow: hidden;
+            flex-direction: column;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Press Shift + A to open Streamlit Application</h1>
+
+    <script type="text/javascript">
+        // Function to detect Shift + A keypress and trigger the backend process
+        document.addEventListener('keydown', function(event) {
+            if (event.shiftKey && event.key === 'A') {
+                fetch('http://localhost:5000/run_streamlit')  // Request to run the Streamlit app
+                    .then(response => response.json())
+                    .then(data => {
+                        alert(data.message);  // Show message to user
+                    });
+            }
+        });
+    </script>
+</body>
+</html>
